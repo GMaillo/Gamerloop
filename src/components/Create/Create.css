@@ -1,0 +1,25 @@
+.create {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+}
+.controller {
+    width: 100%;
+    margin: 5px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.cardactions {
+    width: 75%;
+}

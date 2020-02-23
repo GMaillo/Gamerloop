@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 20vh;
+}
+.selectores {
+    width: 100%;
+    margin-top: 15px;
+}
+.cardList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8e8e91;
+    width: 100%;
+}
+.fSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filtros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.controller {
+    width: 10%;
+}

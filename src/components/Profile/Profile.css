@@ -1,0 +1,24 @@
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.cardContend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.inputForm {
+    display: flex;
+    flex-direction: column;
+}
+.controller {
+    width: 100%;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+body{
+    background-color: #8e8e91;
+}
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #8e8e91;
+}
+
+.card {
+    width: 35%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+.form {
+    display: block;
+    width: 75%;
+    height: 100%;
+}

@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GamerLoop
 
-## Available Scripts
 
-In the project directory, you can run:
+## Proyecto final Keepcoding VII edición
 
-### `npm start`
+Con la llegada de las plataformas de streaming, la vida del videojuego físico poco a poco
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+llegará a su fin... Mientras tanto, podemos hacer que dure lo máximo posible
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+sin parar de jugar gracias a Garmerloop. 
 
-### `npm test`
+## Instalación API
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pinchando en el siguiente enlace accedemos al repositio donde hemos creado la api de gamerloop.
 
-### `npm run build`
+[Gamerloop-API](https://github.com/GMaillo/gamerloop-api.git).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Después descargamos, instalamos y arrancamos siguiendo las instrucciones este repositorio.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación APP
 
-### `npm run eject`
+Una vez descargada e instalada la aplicación, la ejecutamos con `npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A través de la IP `http://18.219.131.98:3001/` podemos acceder a la API y visualizar su contenido.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Se utiliza node como servidor y PM2 para mantener la aplicación siempre en ejecución.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Se utiliza nginx como proxy inverso para recibir las peticiones HTTP y derivárselas a node.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Los archivos estáticos que contienen imágenes y css son servidos por nginx. Se añade la cabecera X-Owner GMaillo para poder comprobarlo.
